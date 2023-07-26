@@ -9,10 +9,11 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *n = *list, *h, *t;
+	listint_t *n, *h, *t;
 
 	if (!(*list) || !(*list)->next)
 		return;
+	n = *list;
 	while (n)
 	{
 		if (n->next && (n->n > n->next->n))
